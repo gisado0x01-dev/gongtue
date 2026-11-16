@@ -1,12 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
-<roblox xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
 	<Item class="ModuleScript" referent="RBX8D7A6010957B412F8C1ED5D28D925D7E">
 		<Properties>
-			<Content name="LinkedSource"><null /></Content>
-			<ProtectedString name="Source">local _0dcd681b7dfbd1c05778c04c9d038a34=game:GetService("Players")
+			<Content name="LinkedSource"><null></null></Content>
+			<ProtectedString name="Source"><![CDATA[local _0dcd681b7dfbd1c05778c04c9d038a34=game:GetService("Players")
 local _1f4ebd23596835c182d9aa43fe6fd14f=game:GetService("TextService")
 local _1a1928bad3697cf6e9b4aab606f730b7=game:GetService("Debris")
 local _e06eab2e8ca4caf473050b74a96ff48c=game:GetService("RunService")
@@ -73,21 +72,21 @@ return function()
 			return true
 		end
 		local _94b845f76fa35b7d114fd7626db1a6fd=_2cb27f4f6d7477210a12b7be3edb6bb7(_2997a270392fc03d3d0e5948f7c533dc)[_b08214ddb4e38ef9e1a540860b41f937]
-		if _e518d001ba248bc05d07b27e3421d814&lt;_94b845f76fa35b7d114fd7626db1a6fd.BlockedUntil then
+		if _e518d001ba248bc05d07b27e3421d814<_94b845f76fa35b7d114fd7626db1a6fd.BlockedUntil then
 			return true
 		end
 		local _6abeac466571bc071ded279444990f47=_94b845f76fa35b7d114fd7626db1a6fd.TimeStamps
 		for _56e5959b976acdde0dcabe0570f956d9=#_6abeac466571bc071ded279444990f47,1,-1 do
-			if _e518d001ba248bc05d07b27e3421d814-_6abeac466571bc071ded279444990f47[_56e5959b976acdde0dcabe0570f956d9]&gt;_3535ceaa7c8f63f5769d56eb951bff56.Window then
+			if _e518d001ba248bc05d07b27e3421d814-_6abeac466571bc071ded279444990f47[_56e5959b976acdde0dcabe0570f956d9]>_3535ceaa7c8f63f5769d56eb951bff56.Window then
 				table.remove(_6abeac466571bc071ded279444990f47,_56e5959b976acdde0dcabe0570f956d9)
 			end
 		end
 		table.insert(_6abeac466571bc071ded279444990f47,_e518d001ba248bc05d07b27e3421d814)
-		if#_6abeac466571bc071ded279444990f47&gt;=_d361d103deec1209913632b784dcc6bd.AntiSpam.ExtremeSpamThreshold and _d361d103deec1209913632b784dcc6bd.AntiSpam.KickOnExtremeSpam then
+		if#_6abeac466571bc071ded279444990f47>=_d361d103deec1209913632b784dcc6bd.AntiSpam.ExtremeSpamThreshold and _d361d103deec1209913632b784dcc6bd.AntiSpam.KickOnExtremeSpam then
 			_2997a270392fc03d3d0e5948f7c533dc:Kick("REMOTE SPAM BRUH")
 			return true
 		end
-		if#_6abeac466571bc071ded279444990f47&gt;_3535ceaa7c8f63f5769d56eb951bff56.MaxCalls then
+		if#_6abeac466571bc071ded279444990f47>_3535ceaa7c8f63f5769d56eb951bff56.MaxCalls then
 			_94b845f76fa35b7d114fd7626db1a6fd.BlockedUntil=_e518d001ba248bc05d07b27e3421d814+_3535ceaa7c8f63f5769d56eb951bff56.BlockTime
 			return true
 		end
@@ -106,7 +105,7 @@ return function()
 			if(#_2d07dbaa4d42231928c19a76d0b01da7%2)==1 then
 				_154fe12b221b682ef66deabf69f75580-=1
 			end
-			if(_154fe12b221b682ef66deabf69f75580%4)&gt;=2 then
+			if(_154fe12b221b682ef66deabf69f75580%4)>=2 then
 				_c4a3acb8854711c833fef42acf6535f8=-_c4a3acb8854711c833fef42acf6535f8
 			end
 			_8df4d229e4532c5ad141c74c2f4e92cb+=_c4a3acb8854711c833fef42acf6535f8
@@ -133,14 +132,14 @@ return function()
 
 	local function _579a725880539f0bba0e24a45fccc759(_4a694cfcdf30e48778d086b3c663144a:string):string
 		_4a694cfcdf30e48778d086b3c663144a=tostring(_4a694cfcdf30e48778d086b3c663144a or "")
-		return _4a694cfcdf30e48778d086b3c663144a:gsub("&amp;","&amp;amp;"):gsub("&lt;","&amp;lt;"):gsub("&gt;","&amp;gt;")
+		return _4a694cfcdf30e48778d086b3c663144a:gsub("&","&amp;"):gsub("<","&lt;"):gsub(">","&gt;")
 	end
 	local _3f98c7e0394547d7fd077819dc8c8add="#D4D4D4"
 	local _5f4d89b01dd4b293b41901bf9cb8d5f2="#f74b52"
 
 	local function _ff8bbaef3b2b2d3ed38243836267b229(_2997a270392fc03d3d0e5948f7c533dc:Player,_4a694cfcdf30e48778d086b3c663144a:string,_7157ce545090c6e6324b084ef8d49731:boolean?)
 		local _1ca4d7bf83df453780bd8b84d565af4b=(_7157ce545090c6e6324b084ef8d49731==true)and _5f4d89b01dd4b293b41901bf9cb8d5f2 or _3f98c7e0394547d7fd077819dc8c8add
-		_d361d103deec1209913632b784dcc6bd.CR:FireClient(_2997a270392fc03d3d0e5948f7c533dc,string.format('&lt;font color="%s"&gt;%s&lt;/font&gt;',_1ca4d7bf83df453780bd8b84d565af4b,_579a725880539f0bba0e24a45fccc759(_4a694cfcdf30e48778d086b3c663144a)))
+		_d361d103deec1209913632b784dcc6bd.CR:FireClient(_2997a270392fc03d3d0e5948f7c533dc,string.format('<font color="%s">%s</font>',_1ca4d7bf83df453780bd8b84d565af4b,_579a725880539f0bba0e24a45fccc759(_4a694cfcdf30e48778d086b3c663144a)))
 	end
 
 	local function _3ab2259d18d04ff7490e3d7047d2d51e(_2997a270392fc03d3d0e5948f7c533dc:Player,_a636a76365907137370cb5cbc9333480)
@@ -178,14 +177,14 @@ return function()
 		end
 		if _2997a270392fc03d3d0e5948f7c533dc:GetAttribute("Muted")then
 			local _84475f4412b578b2bfa1567acafac07c=_2997a270392fc03d3d0e5948f7c533dc:GetAttribute("MuteEnd")
-			if _84475f4412b578b2bfa1567acafac07c and os.time()&gt;=_84475f4412b578b2bfa1567acafac07c then
+			if _84475f4412b578b2bfa1567acafac07c and os.time()>=_84475f4412b578b2bfa1567acafac07c then
 				_2997a270392fc03d3d0e5948f7c533dc:SetAttribute("Muted",false)
 				_2997a270392fc03d3d0e5948f7c533dc:SetAttribute("MuteEnd",nil)
 			else
 				return
 			end
 		end
-		if#_f668373a1ea4ff36da62be583749c107&gt;_d361d103deec1209913632b784dcc6bd.AntiSpam.CharLimit or#_f668373a1ea4ff36da62be583749c107:gsub("%s+","")==0 then
+		if#_f668373a1ea4ff36da62be583749c107>_d361d103deec1209913632b784dcc6bd.AntiSpam.CharLimit or#_f668373a1ea4ff36da62be583749c107:gsub("%s+","")==0 then
 			return
 		end
 		if _d361d103deec1209913632b784dcc6bd.AntiSpam.OnCooldown[_2997a270392fc03d3d0e5948f7c533dc]then
@@ -205,7 +204,7 @@ return function()
 		local _ea23a3d2edeb4438fdb0c7ff4dfcd03d=_2997a270392fc03d3d0e5948f7c533dc.DisplayName
 		local _1ada92c3aa67e7cd697a6e4a6de40d06=(_2997a270392fc03d3d0e5948f7c533dc.Team and _2997a270392fc03d3d0e5948f7c533dc.Team.TeamColor and _2997a270392fc03d3d0e5948f7c533dc.Team.TeamColor.Color)or _f7638873d44aa6e3890df5d93512e6c3(_2997a270392fc03d3d0e5948f7c533dc.Name)
 		local _1ca4d7bf83df453780bd8b84d565af4b=_f2b7f6b62d50590c667e6db418cab856(_1ada92c3aa67e7cd697a6e4a6de40d06)
-		local _bb40e8d720f4b4903793f69330716936=string.format('&lt;font color="%s"&gt;%s&lt;/font&gt;: %s',_1ca4d7bf83df453780bd8b84d565af4b,_579a725880539f0bba0e24a45fccc759(_ea23a3d2edeb4438fdb0c7ff4dfcd03d),_579a725880539f0bba0e24a45fccc759(_72a3f9c5f3d6533d23e641dd307f656e))
+		local _bb40e8d720f4b4903793f69330716936=string.format('<font color="%s">%s</font>: %s',_1ca4d7bf83df453780bd8b84d565af4b,_579a725880539f0bba0e24a45fccc759(_ea23a3d2edeb4438fdb0c7ff4dfcd03d),_579a725880539f0bba0e24a45fccc759(_72a3f9c5f3d6533d23e641dd307f656e))
 		local _b75cb6f08efe9d80b1a82cda59e78ec1=Instance.new("Folder")
 		_b75cb6f08efe9d80b1a82cda59e78ec1.Name=tostring(os.clock())
 		_b75cb6f08efe9d80b1a82cda59e78ec1.Parent=_d361d103deec1209913632b784dcc6bd.MF
@@ -285,7 +284,7 @@ return function()
 				if _bf499b010fbda766111795962fa2fca6.Team==_a636a76365907137370cb5cbc9333480 then
 					local _4852ea1c2303b34cd2953812eb3dcfe6=_1dfc3dacb1fe6f6f7fccc91dcb49f3d3(_2997a270392fc03d3d0e5948f7c533dc,_d6e8e0aefc5da83be83861934ec21b40,_bf499b010fbda766111795962fa2fca6.UserId)
 					if _4852ea1c2303b34cd2953812eb3dcfe6 then
-						local _6bc25ebabc9390c882e168733423d199=string.format('&lt;font color="%s"&gt;[Team]&lt;/font&gt; &lt;font color="%s"&gt;%s&lt;/font&gt;: %s',_ccd21afc4f7a95e1beb8f35a9f52adb0,_ccd21afc4f7a95e1beb8f35a9f52adb0,_9f648cfd283bc60cd4686a50449c3281,_579a725880539f0bba0e24a45fccc759(_4852ea1c2303b34cd2953812eb3dcfe6))
+						local _6bc25ebabc9390c882e168733423d199=string.format('<font color="%s">[Team]</font> <font color="%s">%s</font>: %s',_ccd21afc4f7a95e1beb8f35a9f52adb0,_ccd21afc4f7a95e1beb8f35a9f52adb0,_9f648cfd283bc60cd4686a50449c3281,_579a725880539f0bba0e24a45fccc759(_4852ea1c2303b34cd2953812eb3dcfe6))
 						_d361d103deec1209913632b784dcc6bd.CR:FireClient(_bf499b010fbda766111795962fa2fca6,{Kind="team",UID=_2997a270392fc03d3d0e5948f7c533dc.UserId,SDN=_2997a270392fc03d3d0e5948f7c533dc.DisplayName,SenderHex=_ccd21afc4f7a95e1beb8f35a9f52adb0,Rich=_6bc25ebabc9390c882e168733423d199})
 						_0d944a07f58e002f7d6ab17147678d25(_bf499b010fbda766111795962fa2fca6,_2997a270392fc03d3d0e5948f7c533dc,_4852ea1c2303b34cd2953812eb3dcfe6)
 					end
@@ -316,20 +315,20 @@ return function()
 			local _7751f5b0b8f10572791e2da44a48b018=_ee78647c3ba51d6b0ffbb5be2ab74ba5(_ff326448a2898dba58c14937cc81409f)
 			local _11011943abf2ef6db3c735f9dbc2d2d8=_579a725880539f0bba0e24a45fccc759(_83aea7ac8423bf45f4fba6eeff1a4802)
 			local _9749fbb62c025a974c368ae86d039a5a=_579a725880539f0bba0e24a45fccc759(_7ea34f90689a49ca7946e377e4bb6183)
-			_d361d103deec1209913632b784dcc6bd.CR:FireClient(_ff326448a2898dba58c14937cc81409f,{Kind="whisper",UID=_2997a270392fc03d3d0e5948f7c533dc.UserId,SDN=_2997a270392fc03d3d0e5948f7c533dc.DisplayName,SenderHex=_5a105932d9bd6ef43c57eeaac9177544,Rich=string.format('&lt;font color="%s"&gt;[From &lt;/font&gt;&lt;font color="%s"&gt;%s&lt;/font&gt;&lt;font color="%s"&gt;] &lt;/font&gt;&lt;font color="%s"&gt;%s&lt;/font&gt;&lt;font color="%s"&gt;: %s&lt;/font&gt;',_326bc750b63e11211fb17e41294c27dc,_326bc750b63e11211fb17e41294c27dc,_ab3cbdbd810f7ea2a0f1e5ffe0c4cf60,_326bc750b63e11211fb17e41294c27dc,_5a105932d9bd6ef43c57eeaac9177544,_ab3cbdbd810f7ea2a0f1e5ffe0c4cf60,_326bc750b63e11211fb17e41294c27dc,_11011943abf2ef6db3c735f9dbc2d2d8)})
-			_d361d103deec1209913632b784dcc6bd.CR:FireClient(_2997a270392fc03d3d0e5948f7c533dc,{Kind="whisper",UID=_2997a270392fc03d3d0e5948f7c533dc.UserId,SDN=_2997a270392fc03d3d0e5948f7c533dc.DisplayName,SenderHex=_5a105932d9bd6ef43c57eeaac9177544,Rich=string.format('&lt;font color="%s"&gt;[To &lt;/font&gt;&lt;font color="%s"&gt;%s&lt;/font&gt;&lt;font color="%s"&gt;] &lt;/font&gt;&lt;font color="%s"&gt;%s&lt;/font&gt;&lt;font color="%s"&gt;: %s&lt;/font&gt;',_326bc750b63e11211fb17e41294c27dc,_326bc750b63e11211fb17e41294c27dc,_6de11fc1d09ff75394d30636f6269840,_326bc750b63e11211fb17e41294c27dc,_5a105932d9bd6ef43c57eeaac9177544,_ab3cbdbd810f7ea2a0f1e5ffe0c4cf60,_326bc750b63e11211fb17e41294c27dc,_9749fbb62c025a974c368ae86d039a5a)})
+			_d361d103deec1209913632b784dcc6bd.CR:FireClient(_ff326448a2898dba58c14937cc81409f,{Kind="whisper",UID=_2997a270392fc03d3d0e5948f7c533dc.UserId,SDN=_2997a270392fc03d3d0e5948f7c533dc.DisplayName,SenderHex=_5a105932d9bd6ef43c57eeaac9177544,Rich=string.format('<font color="%s">[From </font><font color="%s">%s</font><font color="%s">] </font><font color="%s">%s</font><font color="%s">: %s</font>',_326bc750b63e11211fb17e41294c27dc,_326bc750b63e11211fb17e41294c27dc,_ab3cbdbd810f7ea2a0f1e5ffe0c4cf60,_326bc750b63e11211fb17e41294c27dc,_5a105932d9bd6ef43c57eeaac9177544,_ab3cbdbd810f7ea2a0f1e5ffe0c4cf60,_326bc750b63e11211fb17e41294c27dc,_11011943abf2ef6db3c735f9dbc2d2d8)})
+			_d361d103deec1209913632b784dcc6bd.CR:FireClient(_2997a270392fc03d3d0e5948f7c533dc,{Kind="whisper",UID=_2997a270392fc03d3d0e5948f7c533dc.UserId,SDN=_2997a270392fc03d3d0e5948f7c533dc.DisplayName,SenderHex=_5a105932d9bd6ef43c57eeaac9177544,Rich=string.format('<font color="%s">[To </font><font color="%s">%s</font><font color="%s">] </font><font color="%s">%s</font><font color="%s">: %s</font>',_326bc750b63e11211fb17e41294c27dc,_326bc750b63e11211fb17e41294c27dc,_6de11fc1d09ff75394d30636f6269840,_326bc750b63e11211fb17e41294c27dc,_5a105932d9bd6ef43c57eeaac9177544,_ab3cbdbd810f7ea2a0f1e5ffe0c4cf60,_326bc750b63e11211fb17e41294c27dc,_9749fbb62c025a974c368ae86d039a5a)})
 			_0d944a07f58e002f7d6ab17147678d25(_ff326448a2898dba58c14937cc81409f,_2997a270392fc03d3d0e5948f7c533dc,_83aea7ac8423bf45f4fba6eeff1a4802)
 			_0d944a07f58e002f7d6ab17147678d25(_2997a270392fc03d3d0e5948f7c533dc,_2997a270392fc03d3d0e5948f7c533dc,_7ea34f90689a49ca7946e377e4bb6183)
 		end
 	end)
 end
-</ProtectedString>
+]]></ProtectedString>
 			<string name="ScriptGuid">{ABA7B236-EF77-455B-BA89-7662356F3B02}</string>
 			<BinaryString name="AttributesSerialize">AQAAAA8AAABzY3JpcHRJc0VuYWJsZWQDAQ==</BinaryString>
 			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 			<bool name="DefinesCapabilities">false</bool>
 			<string name="Name">MainModule</string>
-			<BinaryString name="SerializedOverrides" />
+			<BinaryString name="SerializedOverrides"></BinaryString>
 			<int64 name="SourceAssetId">-1</int64>
 			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 		</Properties>
@@ -350,17 +349,17 @@ end
 				<token name="SelectionBehaviorRight">0</token>
 				<token name="SelectionBehaviorUp">0</token>
 				<bool name="SelectionGroup">false</bool>
-				<BinaryString name="AttributesSerialize" />
+				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="DefinesCapabilities">false</bool>
-				<string name="Name" />
-				<BinaryString name="SerializedOverrides" />
+				<string name="Name"></string>
+				<BinaryString name="SerializedOverrides"></BinaryString>
 				<int64 name="SourceAssetId">-1</int64>
 				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 			</Properties>
 			<Item class="LocalScript" referent="RBX56089185CDDE453B9373B8BA97DB4C0D">
 				<Properties>
-					<ProtectedString name="Source">if not game:IsLoaded() then
+					<ProtectedString name="Source"><![CDATA[if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
 local notificationModule = script:FindFirstChildOfClass("ModuleScript")
@@ -481,7 +480,7 @@ function c1f444295634e0eea302c65103092806eefc13511d1d2f66cd4()
 	return math.max(0, IIIiiiIIIIIIiiiiIIiIIIiiiIiI.AbsoluteCanvasSize.Y - IIIiiiIIIIIIiiiiIIiIIIiiiIiI.AbsoluteWindowSize.Y)
 end
 function iIiIIIIIiIiIiIIiIiiiIi()
-	return IIIiiiIIIIIIiiiiIIiIIIiiiIiI.CanvasPosition.Y &gt;= (c1f444295634e0eea302c65103092806eefc13511d1d2f66cd4() - IiIiiIIIIiiIIiiIIIii)
+	return IIIiiiIIIIIIiiiiIIiIIIiiiIiI.CanvasPosition.Y >= (c1f444295634e0eea302c65103092806eefc13511d1d2f66cd4() - IiIiiIIIIiiIIiiIIIii)
 end
 function iIiiIiIIiIiIIiiIiiii(iiIiiiiIIiIiiIIiIIIiiii:boolean)
 	if(iiIiiiiIIiIiiIIiIIIiiii or iIIIIiiiIIiIiIIIIIIiiIi) then
@@ -501,13 +500,13 @@ IIIiiiIIIIIIiiiiIIiIIIiiiIiI:GetPropertyChangedSignal("CanvasPosition"):Connect(
 local iiiiiIiiIIIiIIIIIiiIIII = "All"
 local a1c107b63c0b3388f39e65f04db0248739c334b5acc:number = nil
 function iiIiIiIiiiIIIiIiii(iIIIiIIIiIIiIIIIIIiIIi:string):string iIIIiIIIiIIiIIIIIIiIIi = tostring(iIIIiIIIiIIiIIIIIIiIIi or "")
-	return iIIIiIIIiIIiIIIIIIiIIi:gsub("&amp;", "&amp;amp;"):gsub("&lt;", "&amp;lt;"):gsub("&gt;", "&amp;gt;")
+	return iIIIiIIIiIIiIIIIIIiIIi:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;")
 end
 local IIiIIIiiiiIiiiiIiIiiiiiIIIIIi = "#D4D4D4"
 local IIiIiIiIiIiIIiiIiIi = "#f74b52"
 function d184de5569312ee739d7f190165e185ba9623861cfcf4970693781(iIIIiIIIiIIiIIIIIIiIIi:string, daef75ccb97c25d6d97fde9224c6882fc3488751694:boolean)
 	local d8de4c13664db21d5f60c690614a5febda9423a67ac3c5 = (daef75ccb97c25d6d97fde9224c6882fc3488751694 == true) and IIiIiIiIiIiIIiiIiIi or IIiIIIiiiiIiiiiIiIiiiiiIIIIIi
-	local b60ef1731be477e079629413d1b47e0a0d008187e744a0a = string.format('&lt;font color="%s"&gt;%s&lt;/font&gt;', d8de4c13664db21d5f60c690614a5febda9423a67ac3c5, iiIiIiIiiiIIIiIiii(iIIIiIIIiIIiIIIIIIiIIi))
+	local b60ef1731be477e079629413d1b47e0a0d008187e744a0a = string.format('<font color="%s">%s</font>', d8de4c13664db21d5f60c690614a5febda9423a67ac3c5, iiIiIiIiiiIIIiIiii(iIIIiIIIiIIiIIIIIIiIIi))
 	local iiiiiIiiiiiIIIiIIiiIiiIIi = script:FindFirstChildOfClass("FluidForceSensor"):FindFirstChildOfClass("Frame"):Clone() iiiiiIiiiiiIIIiIIiiIiiIIi:FindFirstChildOfClass("TextLabel").Text = b60ef1731be477e079629413d1b47e0a0d008187e744a0a iiiiiIiiiiiIIIiIIiiIiiIIi.Parent = IIIiiiIIIIIIiiiiIIiIIIiiiIiI iiiiiIiiiiiIIIiIIiiIiiIIi.Name = math.random() table.insert(ebbf22556010cc074c32cf966fe516a69ac45de94f735cfda4b309f70, { b60ef1731be477e079629413d1b47e0a0d008187e744a0a, iiiiiIiiiiiIIIiIIiiIiiIIi }) iIiiIiIIiIiIIiiIiiii()
 end
 function IiiiiIiiiIiiIiiIiiIIIIii(d8de4c13664db21d5f60c690614a5febda9423a67ac3c5:string):Color3 d8de4c13664db21d5f60c690614a5febda9423a67ac3c5 = tostring(d8de4c13664db21d5f60c690614a5febda9423a67ac3c5 or ""):gsub("#", "")
@@ -643,7 +642,7 @@ function iIIIIIIIiiIiIiIIiIiIi(iIIIIIIiIIIiIII, e8621407d501e9459c8b7aefdbf4906f
 		end
 	end
 	table.insert(ebbf22556010cc074c32cf966fe516a69ac45de94f735cfda4b309f70, { IIiiiiIIiiiIIIiiIiIiiIiiI or iiiiIIIiIiIiiiIiiiiIiIIIiIii, iIIIiIIIiiIiIiiiiiIIIIIIIIiII })
-	if # ebbf22556010cc074c32cf966fe516a69ac45de94f735cfda4b309f70 &gt; be1b48dfec309d3f49a68526dc1ad697a3c44b2fc90af then
+	if # ebbf22556010cc074c32cf966fe516a69ac45de94f735cfda4b309f70 > be1b48dfec309d3f49a68526dc1ad697a3c44b2fc90af then
 		for _, d0463e6e34cd110b08f0fd2ad37ca5a9796e1118de13acdead in ipairs(IIIiiiIIIIIIiiiiIIiIIIiiiIiI:GetChildren()) do
 			if d0463e6e34cd110b08f0fd2ad37ca5a9796e1118de13acdead:IsA("Frame") then
 				d0463e6e34cd110b08f0fd2ad37ca5a9796e1118de13acdead:Destroy()
@@ -672,7 +671,7 @@ IIiIIiIiIIiIIiI.PlayerAdded:Connect(
 	end
 )
 local
-function iIiIIIIiIiIiIIiIiI(iIIIiIIIiIIiIIIIIIiIIi) iIIIiIIIiIIiIIIIIIiIIi = tostring(iIIIiIIIiIIiIIIIIIiIIi or "") iIIIiIIIiIIiIIIIIIiIIi = iIIIiIIIiIIiIIIIIIiIIi:gsub("&amp;", "&amp;amp;") iIIIiIIIiIIiIIIIIIiIIi = iIIIiIIIiIIiIIIIIIiIIi:gsub("&lt;", "&amp;lt;") iIIIiIIIiIIiIIIIIIiIIi = iIIIiIIIiIIiIIIIIIiIIi:gsub("&gt;", "&amp;gt;")
+function iIiIIIIiIiIiIIiIiI(iIIIiIIIiIIiIIIIIIiIIi) iIIIiIIIiIIiIIIIIIiIIi = tostring(iIIIiIIIiIIiIIIIIIiIIi or "") iIIIiIIIiIIiIIIIIIiIIi = iIIIiIIIiIIiIIIIIIiIIi:gsub("&", "&amp;") iIIIiIIIiIIiIIIIIIiIIi = iIIIiIIIiIIiIIIIIIiIIi:gsub("<", "&lt;") iIIIiIIIiIIiIIIIIIiIIi = iIIIiIIIiIIiIIIIIIiIIi:gsub(">", "&gt;")
 	return iIIIiIIIiIIiIIIIIIiIIi
 end
 IiiIiIiIiIiiIiIiIiIi.OnClientEvent:Connect(function(IIiiIiiiIIiIIiIIiIIIIIIIi, IiiIiiIiIIIiIIiiIiIIiIIiIIIIii)
@@ -859,7 +858,7 @@ iIIIIIIiIiiIiIiIIiIii.clear = cbe0e021902ca1809c5bec6cc9f71e8974b8bc7663ca(
 		end
 		local iiiiIiIIIiIiII = table.concat(IiiIiiIIiiiIiIIiiiiI, " ")
 		if not iiiiIiIIIiIiII or iiiiIiIIIiIiII:match("^%s*$") then
-			d184de5569312ee739d7f190165e185ba9623861cfcf4970693781("Usage: /emote &lt;name&gt;")
+			d184de5569312ee739d7f190165e185ba9623861cfcf4970693781("Usage: /emote <name>")
 			return
 		end
 		local iIiIiiiIiIiIIIIiiiiIIiiIiII = iIiiIiiiiIiIIIIiiIiiiiI.Character
@@ -937,7 +936,7 @@ iIIIIIIiIiiIiIiIIiIii.clear = cbe0e021902ca1809c5bec6cc9f71e8974b8bc7663ca(
 	function(IiiIiiIIiiiIiIIiiiiI)
 		local IiiiIiIIiiIiiiI = IiiIiiIIiiiIiIIiiiiI[1]
 		if not IiiiIiIIiiIiiiI then
-			d184de5569312ee739d7f190165e185ba9623861cfcf4970693781("사용법: /whisper &lt;플레이어&gt; &lt;메시지&gt;")
+			d184de5569312ee739d7f190165e185ba9623861cfcf4970693781("사용법: /whisper <플레이어> <메시지>")
 			return
 		end
 		local iiiiiiiiiiIiIIiiIiIiiIIIIIIi = IIIIIIiIIiiiiiiiIIiII(IiiiIiIIiiIiiiI)
@@ -1309,29 +1308,29 @@ local d04907c7966db82afd05bc2d5bc839a1e0a742c9851ea5a7 = game:GetService("GuiSer
 			end
 		end
 	end
-)</ProtectedString>
+)]]></ProtectedString>
 					<bool name="Disabled">false</bool>
-					<Content name="LinkedSource"><null /></Content>
+					<Content name="LinkedSource"><null></null></Content>
 					<token name="RunContext">0</token>
 					<string name="ScriptGuid">{1BDBC137-25BC-4F37-A60D-248ABC4C4A00}</string>
 					<BinaryString name="AttributesSerialize">AQAAAA8AAABzY3JpcHRJc0VuYWJsZWQDAQ==</BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="DefinesCapabilities">false</bool>
-					<string name="Name" />
-					<BinaryString name="SerializedOverrides" />
+					<string name="Name"></string>
+					<BinaryString name="SerializedOverrides"></BinaryString>
 					<int64 name="SourceAssetId">-1</int64>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 				</Properties>
 				<Item class="ModuleScript" referent="RBXC5D0158647BA48A59B42C2CFA6D93055">
 					<Properties>
-						<Content name="LinkedSource"><null /></Content>
-						<ProtectedString name="Source">local a={};local Players=game:GetService("Players");local TweenService=game:GetService("TweenService");local p=Players.LocalPlayer;local g,h;local n=0;local function new(c,par,props)local x=Instance.new(c);for k,v in props do x[k]=v end;x.Parent=par;return x end;local function tw(o,x)TweenService:Create(o,TweenInfo.new(0.5,Enum.EasingStyle.Exponential,Enum.EasingDirection.Out),x):Play()end;local function init()local pg=p:WaitForChild("PlayerGui");g=pg:FindFirstChild("BannerNotification");if g then h=g:FindFirstChild("ActiveNotifications");if h then return end;g:Destroy()end;g=new("ScreenGui",pg,{Name="BannerNotification",ResetOnSpawn=false,IgnoreGuiInset=true,DisplayOrder=100,ScreenInsets=Enum.ScreenInsets.DeviceSafeInsets,ZIndexBehavior=Enum.ZIndexBehavior.Sibling});h=new("Frame",g,{Name="ActiveNotifications",AnchorPoint=Vector2.new(0.5,0.5),BackgroundTransparency=1,Position=UDim2.new(0.5,0,0.5,0),Size=UDim2.new(1,0,1,0)});new("UIListLayout",h,{HorizontalAlignment=Enum.HorizontalAlignment.Center,SortOrder=Enum.SortOrder.LayoutOrder});new("UIPadding",h,{PaddingTop=UDim.new(0,10)})end;function a.Notify(icon,title,msg,duration)init();n+=1;local k=type(icon)=="string"and icon:sub(1,3)or"";local em=type(icon)=="string"and icon~=""and k~="â"and k~="â "and not icon:match("^rbxasset");local f=new("Frame",h,{Name="Notification"..n,LayoutOrder=n,AutomaticSize=Enum.AutomaticSize.Y,BackgroundTransparency=1,Size=UDim2.new(1,0,0,0)});local fp=new("UIPadding",f,{PaddingTop=UDim.new(0,10),PaddingBottom=UDim.new(0,10)});local s=new("ImageLabel",f,{Name="Shape",AnchorPoint=Vector2.new(0.5,0.5),BackgroundTransparency=1,Image="rbxassetid://11983017276",ImageColor3=Color3.new(0,0,0),ImageTransparency=1,Position=UDim2.new(0.5,0,0.5,0),ScaleType=Enum.ScaleType.Slice,Size=UDim2.fromOffset(60,60),SliceCenter=Rect.new(512,512,512,512)});local ss=new("UIScale",s,{Scale=0});local nt=new("ImageLabel",f,{Name="Notification",AnchorPoint=Vector2.new(0.5,0),AutomaticSize=Enum.AutomaticSize.XY,BackgroundTransparency=1,Image="rbxassetid://11942813307",ImageTransparency=1,Position=UDim2.new(0.5,0,0,0),ScaleType=Enum.ScaleType.Slice,SliceCenter=Rect.new(512,512,512,512)});local ns=new("UIScale",nt,{});new("UIPadding",nt,{PaddingTop=UDim.new(0,5),PaddingBottom=UDim.new(0,5),PaddingLeft=UDim.new(0,10),PaddingRight=UDim.new(0,25)});local i=new("ImageLabel",nt,{Name="Icon",AnchorPoint=Vector2.new(0,0.5),BackgroundTransparency=1,Image=em and""or"rbxassetid://18797417802",ImageColor3=Color3.fromRGB(255,255,255),ImageTransparency=1,Position=UDim2.new(0,15,0.5,0),ScaleType=Enum.ScaleType.Fit,Size=UDim2.fromOffset(30,30),ZIndex=2});local e=new("TextLabel",nt,{Name="Emoji",AnchorPoint=Vector2.new(0,0.5),BackgroundTransparency=1,Font=Enum.Font.GothamMedium,Position=UDim2.new(0,15,0.5,0),Size=UDim2.fromOffset(30,30),Text=em and icon or"",TextColor3=Color3.new(1,1,1),TextSize=26,TextTransparency=1,ZIndex=2});local tx=new("CanvasGroup",nt,{Name="Texts",AutomaticSize=Enum.AutomaticSize.XY,BackgroundTransparency=1,GroupTransparency=1,Size=UDim2.new(1,-50,0,50)});new("UIListLayout",tx,{Padding=UDim.new(0,2),SortOrder=Enum.SortOrder.LayoutOrder,VerticalAlignment=Enum.VerticalAlignment.Center});new("UIPadding",tx,{PaddingTop=UDim.new(0,10),PaddingBottom=UDim.new(0,10),PaddingLeft=UDim.new(0,65)});local t=new("TextLabel",tx,{Name="Header",AutomaticSize=Enum.AutomaticSize.XY,BackgroundTransparency=1,Font=Enum.Font.GothamMedium,Text=tostring(title or"ìë¦¼"),TextColor3=Color3.new(1,1,1),TextSize=17,TextTransparency=0.1,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Left,ZIndex=2,LayoutOrder=1});new("UISizeConstraint",t,{MinSize=Vector2.new(250,0),MaxSize=Vector2.new(300,math.huge)});local m=new("TextLabel",tx,{Name="Description",AutomaticSize=Enum.AutomaticSize.XY,BackgroundTransparency=1,Font=Enum.Font.Gotham,Text=tostring(msg or""),TextColor3=Color3.new(1,1,1),TextSize=14,TextTransparency=0.5,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Left,ZIndex=2,LayoutOrder=2});new("UISizeConstraint",m,{MinSize=Vector2.new(250,0),MaxSize=Vector2.new(300,math.huge)});task.spawn(function()tw(s,{ImageTransparency=0.3});tw(ss,{Scale=1.2});task.wait(0.3);s.Image="rbxassetid://11942813307";tw(s,{Size=UDim2.fromOffset(nt.AbsoluteSize.X,nt.AbsoluteSize.Y)});tw(ss,{Scale=1});task.wait(0.1);tw(tx,{GroupTransparency=0});tw(i,{ImageTransparency=0});tw(e,{TextTransparency=0});task.wait(math.max(tonumber(duration)or 3,0.1));tw(tx,{GroupTransparency=1});tw(i,{ImageTransparency=1});tw(e,{TextTransparency=1});task.wait(0.2);s.Image="rbxassetid://11983017276";tw(s,{Size=UDim2.fromOffset(60,60),ImageTransparency=0.3});tw(ss,{Scale=1.2});task.wait(0.3);tw(s,{ImageTransparency=1});tw(ss,{Scale=0});task.wait(0.3);tw(fp,{PaddingTop=UDim.new(0,0),PaddingBottom=UDim.new(0,0)});tw(ns,{Scale=0});task.wait(0.3);f:Destroy()end);return f end;return a</ProtectedString>
+						<Content name="LinkedSource"><null></null></Content>
+						<ProtectedString name="Source">local a={};local Players=game:GetService(&quot;Players&quot;);local TweenService=game:GetService(&quot;TweenService&quot;);local p=Players.LocalPlayer;local g,h;local n=0;local function new(c,par,props)local x=Instance.new(c);for k,v in props do x[k]=v end;x.Parent=par;return x end;local function tw(o,x)TweenService:Create(o,TweenInfo.new(0.5,Enum.EasingStyle.Exponential,Enum.EasingDirection.Out),x):Play()end;local function init()local pg=p:WaitForChild(&quot;PlayerGui&quot;);g=pg:FindFirstChild(&quot;BannerNotification&quot;);if g then h=g:FindFirstChild(&quot;ActiveNotifications&quot;);if h then return end;g:Destroy()end;g=new(&quot;ScreenGui&quot;,pg,{Name=&quot;BannerNotification&quot;,ResetOnSpawn=false,IgnoreGuiInset=true,DisplayOrder=100,ScreenInsets=Enum.ScreenInsets.DeviceSafeInsets,ZIndexBehavior=Enum.ZIndexBehavior.Sibling});h=new(&quot;Frame&quot;,g,{Name=&quot;ActiveNotifications&quot;,AnchorPoint=Vector2.new(0.5,0.5),BackgroundTransparency=1,Position=UDim2.new(0.5,0,0.5,0),Size=UDim2.new(1,0,1,0)});new(&quot;UIListLayout&quot;,h,{HorizontalAlignment=Enum.HorizontalAlignment.Center,SortOrder=Enum.SortOrder.LayoutOrder});new(&quot;UIPadding&quot;,h,{PaddingTop=UDim.new(0,10)})end;function a.Notify(icon,title,msg,duration)init();n+=1;local k=type(icon)==&quot;string&quot;and icon:sub(1,3)or&quot;&quot;;local em=type(icon)==&quot;string&quot;and icon~=&quot;&quot;and k~=&quot;&#195;&#162;&#194;&#156;&#194;&#148;&quot;and k~=&quot;&#195;&#162;&#194;&#154;&#194;&#160;&quot;and not icon:match(&quot;^rbxasset&quot;);local f=new(&quot;Frame&quot;,h,{Name=&quot;Notification&quot;..n,LayoutOrder=n,AutomaticSize=Enum.AutomaticSize.Y,BackgroundTransparency=1,Size=UDim2.new(1,0,0,0)});local fp=new(&quot;UIPadding&quot;,f,{PaddingTop=UDim.new(0,10),PaddingBottom=UDim.new(0,10)});local s=new(&quot;ImageLabel&quot;,f,{Name=&quot;Shape&quot;,AnchorPoint=Vector2.new(0.5,0.5),BackgroundTransparency=1,Image=&quot;rbxassetid://11983017276&quot;,ImageColor3=Color3.new(0,0,0),ImageTransparency=1,Position=UDim2.new(0.5,0,0.5,0),ScaleType=Enum.ScaleType.Slice,Size=UDim2.fromOffset(60,60),SliceCenter=Rect.new(512,512,512,512)});local ss=new(&quot;UIScale&quot;,s,{Scale=0});local nt=new(&quot;ImageLabel&quot;,f,{Name=&quot;Notification&quot;,AnchorPoint=Vector2.new(0.5,0),AutomaticSize=Enum.AutomaticSize.XY,BackgroundTransparency=1,Image=&quot;rbxassetid://11942813307&quot;,ImageTransparency=1,Position=UDim2.new(0.5,0,0,0),ScaleType=Enum.ScaleType.Slice,SliceCenter=Rect.new(512,512,512,512)});local ns=new(&quot;UIScale&quot;,nt,{});new(&quot;UIPadding&quot;,nt,{PaddingTop=UDim.new(0,5),PaddingBottom=UDim.new(0,5),PaddingLeft=UDim.new(0,10),PaddingRight=UDim.new(0,25)});local i=new(&quot;ImageLabel&quot;,nt,{Name=&quot;Icon&quot;,AnchorPoint=Vector2.new(0,0.5),BackgroundTransparency=1,Image=em and&quot;&quot;or&quot;rbxassetid://18797417802&quot;,ImageColor3=Color3.fromRGB(255,255,255),ImageTransparency=1,Position=UDim2.new(0,15,0.5,0),ScaleType=Enum.ScaleType.Fit,Size=UDim2.fromOffset(30,30),ZIndex=2});local e=new(&quot;TextLabel&quot;,nt,{Name=&quot;Emoji&quot;,AnchorPoint=Vector2.new(0,0.5),BackgroundTransparency=1,Font=Enum.Font.GothamMedium,Position=UDim2.new(0,15,0.5,0),Size=UDim2.fromOffset(30,30),Text=em and icon or&quot;&quot;,TextColor3=Color3.new(1,1,1),TextSize=26,TextTransparency=1,ZIndex=2});local tx=new(&quot;CanvasGroup&quot;,nt,{Name=&quot;Texts&quot;,AutomaticSize=Enum.AutomaticSize.XY,BackgroundTransparency=1,GroupTransparency=1,Size=UDim2.new(1,-50,0,50)});new(&quot;UIListLayout&quot;,tx,{Padding=UDim.new(0,2),SortOrder=Enum.SortOrder.LayoutOrder,VerticalAlignment=Enum.VerticalAlignment.Center});new(&quot;UIPadding&quot;,tx,{PaddingTop=UDim.new(0,10),PaddingBottom=UDim.new(0,10),PaddingLeft=UDim.new(0,65)});local t=new(&quot;TextLabel&quot;,tx,{Name=&quot;Header&quot;,AutomaticSize=Enum.AutomaticSize.XY,BackgroundTransparency=1,Font=Enum.Font.GothamMedium,Text=tostring(title or&quot;&#195;&#172;&#194;&#149;&#194;&#140;&#195;&#171;&#194;&#166;&#194;&#188;&quot;),TextColor3=Color3.new(1,1,1),TextSize=17,TextTransparency=0.1,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Left,ZIndex=2,LayoutOrder=1});new(&quot;UISizeConstraint&quot;,t,{MinSize=Vector2.new(250,0),MaxSize=Vector2.new(300,math.huge)});local m=new(&quot;TextLabel&quot;,tx,{Name=&quot;Description&quot;,AutomaticSize=Enum.AutomaticSize.XY,BackgroundTransparency=1,Font=Enum.Font.Gotham,Text=tostring(msg or&quot;&quot;),TextColor3=Color3.new(1,1,1),TextSize=14,TextTransparency=0.5,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Left,ZIndex=2,LayoutOrder=2});new(&quot;UISizeConstraint&quot;,m,{MinSize=Vector2.new(250,0),MaxSize=Vector2.new(300,math.huge)});task.spawn(function()tw(s,{ImageTransparency=0.3});tw(ss,{Scale=1.2});task.wait(0.3);s.Image=&quot;rbxassetid://11942813307&quot;;tw(s,{Size=UDim2.fromOffset(nt.AbsoluteSize.X,nt.AbsoluteSize.Y)});tw(ss,{Scale=1});task.wait(0.1);tw(tx,{GroupTransparency=0});tw(i,{ImageTransparency=0});tw(e,{TextTransparency=0});task.wait(math.max(tonumber(duration)or 3,0.1));tw(tx,{GroupTransparency=1});tw(i,{ImageTransparency=1});tw(e,{TextTransparency=1});task.wait(0.2);s.Image=&quot;rbxassetid://11983017276&quot;;tw(s,{Size=UDim2.fromOffset(60,60),ImageTransparency=0.3});tw(ss,{Scale=1.2});task.wait(0.3);tw(s,{ImageTransparency=1});tw(ss,{Scale=0});task.wait(0.3);tw(fp,{PaddingTop=UDim.new(0,0),PaddingBottom=UDim.new(0,0)});tw(ns,{Scale=0});task.wait(0.3);f:Destroy()end);return f end;return a</ProtectedString>
 						<string name="ScriptGuid">{4F141E36-0E85-4131-90B4-D776F7CEDC1C}</string>
 						<BinaryString name="AttributesSerialize">AQAAAA8AAABzY3JpcHRJc0VuYWJsZWQDAQ==</BinaryString>
 						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="DefinesCapabilities">false</bool>
-						<string name="Name" />
-						<BinaryString name="SerializedOverrides" />
+						<string name="Name"></string>
+						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					</Properties>
@@ -1393,11 +1392,11 @@ local d04907c7966db82afd05bc2d5bc839a1e0a742c9851ea5a7 = game:GetService("GuiSer
 						<token name="SelectionBehaviorRight">0</token>
 						<token name="SelectionBehaviorUp">0</token>
 						<bool name="SelectionGroup">false</bool>
-						<BinaryString name="AttributesSerialize" />
+						<BinaryString name="AttributesSerialize"></BinaryString>
 						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="DefinesCapabilities">false</bool>
-						<string name="Name" />
-						<BinaryString name="SerializedOverrides" />
+						<string name="Name"></string>
+						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					</Properties>
@@ -1458,11 +1457,11 @@ local d04907c7966db82afd05bc2d5bc839a1e0a742c9851ea5a7 = game:GetService("GuiSer
 							<token name="SelectionBehaviorRight">0</token>
 							<token name="SelectionBehaviorUp">0</token>
 							<bool name="SelectionGroup">false</bool>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
-							<string name="Name" />
-							<BinaryString name="SerializedOverrides" />
+							<string name="Name"></string>
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -1476,12 +1475,12 @@ local d04907c7966db82afd05bc2d5bc839a1e0a742c9851ea5a7 = game:GetService("GuiSer
 								<CachedFaceId><url>rbxasset://fonts/Arimo-Regular.ttf</url></CachedFaceId>
 							</Font>
 							<float name="LineHeight">1</float>
-							<string name="LocalizationMatchIdentifier" />
-							<string name="LocalizationMatchedSourceText" />
+							<string name="LocalizationMatchIdentifier"></string>
+							<string name="LocalizationMatchedSourceText"></string>
 							<int name="MaxVisibleGraphemes">-1</int>
-							<string name="OpenTypeFeatures" />
+							<string name="OpenTypeFeatures"></string>
 							<bool name="RichText">false</bool>
-							<string name="Text" />
+							<string name="Text"></string>
 							<Color3 name="TextColor3">
 								<R>0.105882362</R>
 								<G>0.164705887</G>
@@ -1561,17 +1560,17 @@ local d04907c7966db82afd05bc2d5bc839a1e0a742c9851ea5a7 = game:GetService("GuiSer
 							<token name="SelectionBehaviorRight">0</token>
 							<token name="SelectionBehaviorUp">0</token>
 							<bool name="SelectionGroup">false</bool>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
-							<string name="Name" />
-							<BinaryString name="SerializedOverrides" />
+							<string name="Name"></string>
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
 						<Item class="LocalScript" referent="RBX75F2C75A83C243BC9E0A61A0E95BB84E">
 							<Properties>
-								<ProtectedString name="Source">script.Parent.MouseButton1Click:Connect(function() 
+								<ProtectedString name="Source"><![CDATA[script.Parent.MouseButton1Click:Connect(function() 
 	script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Background.Container.TextContainer.TextBoxContainer.TextBox.Text = script.Parent.TextLabel.Text
 end)
 script.Parent.MouseEnter:Connect(function(x: number, y: number)
@@ -1579,16 +1578,16 @@ script.Parent.MouseEnter:Connect(function(x: number, y: number)
 end)
 script.Parent.MouseLeave:Connect(function(x: number, y: number)
 	script.Parent.Transparency = 1
-end)</ProtectedString>
+end)]]></ProtectedString>
 								<bool name="Disabled">false</bool>
-								<Content name="LinkedSource"><null /></Content>
+								<Content name="LinkedSource"><null></null></Content>
 								<token name="RunContext">0</token>
 								<string name="ScriptGuid">{AC68A3BB-0E16-4017-9A6C-7A6919BE8519}</string>
 								<BinaryString name="AttributesSerialize">AQAAAA8AAABzY3JpcHRJc0VuYWJsZWQDAQ==</BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
-								<string name="Name" />
-								<BinaryString name="SerializedOverrides" />
+								<string name="Name"></string>
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -1611,11 +1610,11 @@ end)</ProtectedString>
 									<S>0</S>
 									<O>8</O>
 								</UDim>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
-								<string name="Name" />
-								<BinaryString name="SerializedOverrides" />
+								<string name="Name"></string>
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -1634,11 +1633,11 @@ end)</ProtectedString>
 								<token name="HorizontalAlignment">1</token>
 								<token name="SortOrder">2</token>
 								<token name="VerticalAlignment">0</token>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
-								<string name="Name" />
-								<BinaryString name="SerializedOverrides" />
+								<string name="Name"></string>
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -1652,10 +1651,10 @@ end)</ProtectedString>
 									<CachedFaceId><url>rbxasset://fonts/BuilderSans-Medium.otf</url></CachedFaceId>
 								</Font>
 								<float name="LineHeight">1</float>
-								<string name="LocalizationMatchIdentifier" />
-								<string name="LocalizationMatchedSourceText" />
+								<string name="LocalizationMatchIdentifier"></string>
+								<string name="LocalizationMatchedSourceText"></string>
 								<int name="MaxVisibleGraphemes">-1</int>
-								<string name="OpenTypeFeatures" />
+								<string name="OpenTypeFeatures"></string>
 								<bool name="RichText">true</bool>
 								<string name="Text">/clear</string>
 								<Color3 name="TextColor3">
@@ -1731,11 +1730,11 @@ end)</ProtectedString>
 								<token name="SelectionBehaviorRight">0</token>
 								<token name="SelectionBehaviorUp">0</token>
 								<bool name="SelectionGroup">false</bool>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
-								<string name="Name" />
-								<BinaryString name="SerializedOverrides" />
+								<string name="Name"></string>
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -1745,29 +1744,29 @@ end)</ProtectedString>
 				<Item class="Folder" referent="RBX0A78ED27EB0B488C92830AD8AFBFACE4">
 					<Properties>
 						<Content name="ExplorerIconContent">
-							<null />
+							<null></null>
 						</Content>
 						<Color3 name="IconTint">
 							<R>0</R>
 							<G>0</G>
 							<B>0</B>
 						</Color3>
-						<BinaryString name="AttributesSerialize" />
+						<BinaryString name="AttributesSerialize"></BinaryString>
 						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="DefinesCapabilities">false</bool>
-						<string name="Name" />
-						<BinaryString name="SerializedOverrides" />
+						<string name="Name"></string>
+						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					</Properties>
 					<Item class="StringValue" referent="RBX5DA76567D2374299AB5D8345A0818B08">
 						<Properties>
 							<string name="Value">8J+kow==</string>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
 							<string name="Name">2</string>
-							<BinaryString name="SerializedOverrides" />
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -1775,11 +1774,11 @@ end)</ProtectedString>
 					<Item class="StringValue" referent="RBXBE134FAAC01A483BB7400C1F4685D0CD">
 						<Properties>
 							<string name="Value">7Jes6riw66W8IO2BtOumre2VmOqxsOuCmCAvIO2CpOulvCDriITrpbgg7ZuEIOyxhO2MheydhCDsi5zsnpHtlZjshLjsmpQ=</string>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
 							<string name="Name">1</string>
-							<BinaryString name="SerializedOverrides" />
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -1787,11 +1786,11 @@ end)</ProtectedString>
 					<Item class="StringValue" referent="RBX4DE2AB3ED51748D19584DD7DCD944F68">
 						<Properties>
 							<string name="Value">7ISk66eIIOyLoOqzoO2VmOugpCDtlZjsi6DqsbQg7JWE64uI7KOgPw==</string>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
 							<string name="Name">4</string>
-							<BinaryString name="SerializedOverrides" />
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -1799,11 +1798,11 @@ end)</ProtectedString>
 					<Item class="StringValue" referent="RBX2AA3260B137A4D4992CEF106C7B6A203">
 						<Properties>
 							<string name="Value">8J+kow==</string>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
 							<string name="Name">3</string>
-							<BinaryString name="SerializedOverrides" />
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -1811,11 +1810,11 @@ end)</ProtectedString>
 					<Item class="StringValue" referent="RBXEAD995B03D6945248E0D7343BAABFF03">
 						<Properties>
 							<string name="Value">7Jes6riw66W8IO2BtOumre2VnCDtm4Qg64K07Jqp7J2EIOyeheugpe2VmOyEuOyalA==</string>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
 							<string name="Name">5</string>
-							<BinaryString name="SerializedOverrides" />
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -1824,11 +1823,11 @@ end)</ProtectedString>
 				<Item class="FluidForceSensor" referent="RBXBA7D1334FFE54423B63FBD54E7A7119A">
 					<Properties>
 						<token name="UpdateType">0</token>
-						<BinaryString name="AttributesSerialize" />
+						<BinaryString name="AttributesSerialize"></BinaryString>
 						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="DefinesCapabilities">false</bool>
-						<string name="Name" />
-						<BinaryString name="SerializedOverrides" />
+						<string name="Name"></string>
+						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					</Properties>
@@ -1889,11 +1888,11 @@ end)</ProtectedString>
 							<token name="SelectionBehaviorRight">0</token>
 							<token name="SelectionBehaviorUp">0</token>
 							<bool name="SelectionGroup">false</bool>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
-							<string name="Name" />
-							<BinaryString name="SerializedOverrides" />
+							<string name="Name"></string>
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -1915,11 +1914,11 @@ end)</ProtectedString>
 									<S>0</S>
 									<O>0</O>
 								</UDim>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
-								<string name="Name" />
-								<BinaryString name="SerializedOverrides" />
+								<string name="Name"></string>
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -1932,12 +1931,12 @@ end)</ProtectedString>
 									<Style>Normal</Style>
 								</Font>
 								<float name="LineHeight">1</float>
-								<string name="LocalizationMatchIdentifier" />
-								<string name="LocalizationMatchedSourceText" />
+								<string name="LocalizationMatchIdentifier"></string>
+								<string name="LocalizationMatchedSourceText"></string>
 								<int name="MaxVisibleGraphemes">-1</int>
-								<string name="OpenTypeFeatures" />
+								<string name="OpenTypeFeatures"></string>
 								<bool name="RichText">false</bool>
-								<string name="Text" />
+								<string name="Text"></string>
 								<Color3 name="TextColor3">
 									<R>0</R>
 									<G>0</G>
@@ -2017,11 +2016,11 @@ end)</ProtectedString>
 								<token name="SelectionBehaviorRight">0</token>
 								<token name="SelectionBehaviorUp">0</token>
 								<bool name="SelectionGroup">false</bool>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
-								<string name="Name" />
-								<BinaryString name="SerializedOverrides" />
+								<string name="Name"></string>
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -2035,12 +2034,12 @@ end)</ProtectedString>
 									<CachedFaceId><url>rbxasset://fonts/BuilderSans-Medium.otf</url></CachedFaceId>
 								</Font>
 								<float name="LineHeight">1</float>
-								<string name="LocalizationMatchIdentifier" />
-								<string name="LocalizationMatchedSourceText" />
+								<string name="LocalizationMatchIdentifier"></string>
+								<string name="LocalizationMatchedSourceText"></string>
 								<int name="MaxVisibleGraphemes">-1</int>
-								<string name="OpenTypeFeatures" />
+								<string name="OpenTypeFeatures"></string>
 								<bool name="RichText">true</bool>
-								<string name="Text">&lt;font color="#d4d4d4"&gt;Roblox automatically translates supported languages in chat&lt;/font&gt;</string>
+								<string name="Text">&lt;font color=&quot;#d4d4d4&quot;&gt;Roblox automatically translates supported languages in chat&lt;/font&gt;</string>
 								<Color3 name="TextColor3">
 									<R>1</R>
 									<G>1</G>
@@ -2114,11 +2113,11 @@ end)</ProtectedString>
 								<token name="SelectionBehaviorRight">0</token>
 								<token name="SelectionBehaviorUp">0</token>
 								<bool name="SelectionGroup">false</bool>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
-								<string name="Name" />
-								<BinaryString name="SerializedOverrides" />
+								<string name="Name"></string>
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -2128,11 +2127,11 @@ end)</ProtectedString>
 				<Item class="Skin" referent="RBX9511CF0445DA4856ACD7F687B51D0523">
 					<Properties>
 						<int name="SkinColor">226</int>
-						<BinaryString name="AttributesSerialize" />
+						<BinaryString name="AttributesSerialize"></BinaryString>
 						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="DefinesCapabilities">false</bool>
-						<string name="Name" />
-						<BinaryString name="SerializedOverrides" />
+						<string name="Name"></string>
+						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					</Properties>
@@ -2193,11 +2192,11 @@ end)</ProtectedString>
 							<token name="SelectionBehaviorRight">0</token>
 							<token name="SelectionBehaviorUp">0</token>
 							<bool name="SelectionGroup">false</bool>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
-							<string name="Name" />
-							<BinaryString name="SerializedOverrides" />
+							<string name="Name"></string>
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -2219,11 +2218,11 @@ end)</ProtectedString>
 									<S>0</S>
 									<O>0</O>
 								</UDim>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
-								<string name="Name" />
-								<BinaryString name="SerializedOverrides" />
+								<string name="Name"></string>
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -2285,11 +2284,11 @@ end)</ProtectedString>
 								<token name="SelectionBehaviorRight">0</token>
 								<token name="SelectionBehaviorUp">0</token>
 								<bool name="SelectionGroup">false</bool>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
-								<string name="Name" />
-								<BinaryString name="SerializedOverrides" />
+								<string name="Name"></string>
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -2302,17 +2301,17 @@ end)</ProtectedString>
 										<CachedFaceId><url>rbxasset://fonts/BuilderSans-Medium.otf</url></CachedFaceId>
 									</Font>
 									<float name="LineHeight">1</float>
-									<string name="LocalizationMatchIdentifier" />
-									<string name="LocalizationMatchedSourceText" />
+									<string name="LocalizationMatchIdentifier"></string>
+									<string name="LocalizationMatchedSourceText"></string>
 									<int name="MaxVisibleGraphemes">-1</int>
-									<string name="OpenTypeFeatures" />
+									<string name="OpenTypeFeatures"></string>
 									<bool name="RichText">true</bool>
-									<string name="Text">&lt;font color="#d4d4d4"&gt;These are the basic chat commands:
-/whisper &amp;lt;speaker&amp;gt; or /w &amp;lt;speaker&amp;gt; : open private message channel with speaker.
-/team &amp;lt;message&amp;gt; or /t &amp;lt;message&amp;gt; : send a team chat to people on your team.
-/mute &amp;lt;speaker&amp;gt; : mute a speaker.
-/unmute &amp;lt;speaker&amp;gt; : unmute a speaker.
-/clear or /cls: clear messages in chat window &lt;/font&gt;</string>
+									<string name="Text"><![CDATA[<font color="#d4d4d4">These are the basic chat commands:
+/whisper &lt;speaker&gt; or /w &lt;speaker&gt; : open private message channel with speaker.
+/team &lt;message&gt; or /t &lt;message&gt; : send a team chat to people on your team.
+/mute &lt;speaker&gt; : mute a speaker.
+/unmute &lt;speaker&gt; : unmute a speaker.
+/clear or /cls: clear messages in chat window </font>]]></string>
 									<Color3 name="TextColor3">
 										<R>1</R>
 										<G>1</G>
@@ -2386,11 +2385,11 @@ end)</ProtectedString>
 									<token name="SelectionBehaviorRight">0</token>
 									<token name="SelectionBehaviorUp">0</token>
 									<bool name="SelectionGroup">false</bool>
-									<BinaryString name="AttributesSerialize" />
+									<BinaryString name="AttributesSerialize"></BinaryString>
 									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 									<bool name="DefinesCapabilities">false</bool>
-									<string name="Name" />
-									<BinaryString name="SerializedOverrides" />
+									<string name="Name"></string>
+									<BinaryString name="SerializedOverrides"></BinaryString>
 									<int64 name="SourceAssetId">-1</int64>
 									<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 								</Properties>
@@ -2456,11 +2455,11 @@ end)</ProtectedString>
 					<token name="SelectionBehaviorRight">0</token>
 					<token name="SelectionBehaviorUp">0</token>
 					<bool name="SelectionGroup">false</bool>
-					<BinaryString name="AttributesSerialize" />
+					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 					<bool name="DefinesCapabilities">false</bool>
-					<string name="Name" />
-					<BinaryString name="SerializedOverrides" />
+					<string name="Name"></string>
+					<BinaryString name="SerializedOverrides"></BinaryString>
 					<int64 name="SourceAssetId">-1</int64>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 				</Properties>
@@ -2521,11 +2520,11 @@ end)</ProtectedString>
 						<token name="SelectionBehaviorRight">0</token>
 						<token name="SelectionBehaviorUp">0</token>
 						<bool name="SelectionGroup">false</bool>
-						<BinaryString name="AttributesSerialize" />
+						<BinaryString name="AttributesSerialize"></BinaryString>
 						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="DefinesCapabilities">false</bool>
 						<string name="Name">chatInputBar</string>
-						<BinaryString name="SerializedOverrides" />
+						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					</Properties>
@@ -2586,11 +2585,11 @@ end)</ProtectedString>
 							<token name="SelectionBehaviorRight">0</token>
 							<token name="SelectionBehaviorUp">0</token>
 							<bool name="SelectionGroup">false</bool>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
 							<string name="Name">Background</string>
-							<BinaryString name="SerializedOverrides" />
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -2612,11 +2611,11 @@ end)</ProtectedString>
 									<S>0</S>
 									<O>3</O>
 								</UDim>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
 								<string name="Name">Corner</string>
-								<BinaryString name="SerializedOverrides" />
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -2640,11 +2639,11 @@ end)</ProtectedString>
 								<float name="Thickness">1</float>
 								<float name="Transparency">0.800000012</float>
 								<int name="ZIndex">1</int>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
 								<string name="Name">Border</string>
-								<BinaryString name="SerializedOverrides" />
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -2706,11 +2705,11 @@ end)</ProtectedString>
 								<token name="SelectionBehaviorRight">0</token>
 								<token name="SelectionBehaviorUp">0</token>
 								<bool name="SelectionGroup">false</bool>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
 								<string name="Name">Container</string>
-								<BinaryString name="SerializedOverrides" />
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -2771,11 +2770,11 @@ end)</ProtectedString>
 									<token name="SelectionBehaviorRight">0</token>
 									<token name="SelectionBehaviorUp">0</token>
 									<bool name="SelectionGroup">false</bool>
-									<BinaryString name="AttributesSerialize" />
+									<BinaryString name="AttributesSerialize"></BinaryString>
 									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 									<bool name="DefinesCapabilities">false</bool>
 									<string name="Name">TextContainer</string>
-									<BinaryString name="SerializedOverrides" />
+									<BinaryString name="SerializedOverrides"></BinaryString>
 									<int64 name="SourceAssetId">-1</int64>
 									<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 								</Properties>
@@ -2797,11 +2796,11 @@ end)</ProtectedString>
 											<S>0</S>
 											<O>10</O>
 										</UDim>
-										<BinaryString name="AttributesSerialize" />
+										<BinaryString name="AttributesSerialize"></BinaryString>
 										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 										<bool name="DefinesCapabilities">false</bool>
 										<string name="Name">UIPadding</string>
-										<BinaryString name="SerializedOverrides" />
+										<BinaryString name="SerializedOverrides"></BinaryString>
 										<int64 name="SourceAssetId">-1</int64>
 										<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 									</Properties>
@@ -2863,11 +2862,11 @@ end)</ProtectedString>
 										<token name="SelectionBehaviorRight">0</token>
 										<token name="SelectionBehaviorUp">0</token>
 										<bool name="SelectionGroup">false</bool>
-										<BinaryString name="AttributesSerialize" />
+										<BinaryString name="AttributesSerialize"></BinaryString>
 										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 										<bool name="DefinesCapabilities">false</bool>
 										<string name="Name">TextBoxContainer</string>
-										<BinaryString name="SerializedOverrides" />
+										<BinaryString name="SerializedOverrides"></BinaryString>
 										<int64 name="SourceAssetId">-1</int64>
 										<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 									</Properties>
@@ -2881,11 +2880,11 @@ end)</ProtectedString>
 												<CachedFaceId><url>rbxasset://fonts/BuilderSans-Medium.otf</url></CachedFaceId>
 											</Font>
 											<float name="LineHeight">1</float>
-											<string name="LocalizationMatchIdentifier" />
-											<string name="LocalizationMatchedSourceText" />
+											<string name="LocalizationMatchIdentifier"></string>
+											<string name="LocalizationMatchedSourceText"></string>
 											<int name="MaxVisibleGraphemes">-1</int>
 											<bool name="MultiLine">false</bool>
-											<string name="OpenTypeFeatures" />
+											<string name="OpenTypeFeatures"></string>
 											<Color3 name="PlaceholderColor3">
 												<R>0.698039234</R>
 												<G>0.698039234</G>
@@ -2894,7 +2893,7 @@ end)</ProtectedString>
 											<string name="PlaceholderText">To chat click here or press / key</string>
 											<bool name="RichText">false</bool>
 											<bool name="ShowNativeInput">true</bool>
-											<string name="Text" />
+											<string name="Text"></string>
 											<Color3 name="TextColor3">
 												<R>1</R>
 												<G>1</G>
@@ -2969,11 +2968,11 @@ end)</ProtectedString>
 											<token name="SelectionBehaviorRight">0</token>
 											<token name="SelectionBehaviorUp">0</token>
 											<bool name="SelectionGroup">false</bool>
-											<BinaryString name="AttributesSerialize" />
+											<BinaryString name="AttributesSerialize"></BinaryString>
 											<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 											<bool name="DefinesCapabilities">false</bool>
 											<string name="Name">TextBox</string>
-											<BinaryString name="SerializedOverrides" />
+											<BinaryString name="SerializedOverrides"></BinaryString>
 											<int64 name="SourceAssetId">-1</int64>
 											<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 										</Properties>
@@ -2988,12 +2987,12 @@ end)</ProtectedString>
 											<CachedFaceId><url>rbxasset://fonts/BuilderSans-Medium.otf</url></CachedFaceId>
 										</Font>
 										<float name="LineHeight">1</float>
-										<string name="LocalizationMatchIdentifier" />
-										<string name="LocalizationMatchedSourceText" />
+										<string name="LocalizationMatchIdentifier"></string>
+										<string name="LocalizationMatchedSourceText"></string>
 										<int name="MaxVisibleGraphemes">-1</int>
-										<string name="OpenTypeFeatures" />
+										<string name="OpenTypeFeatures"></string>
 										<bool name="RichText">false</bool>
-										<string name="Text" />
+										<string name="Text"></string>
 										<Color3 name="TextColor3">
 											<R>1</R>
 											<G>1</G>
@@ -3073,11 +3072,11 @@ end)</ProtectedString>
 										<token name="SelectionBehaviorRight">0</token>
 										<token name="SelectionBehaviorUp">0</token>
 										<bool name="SelectionGroup">false</bool>
-										<BinaryString name="AttributesSerialize" />
+										<BinaryString name="AttributesSerialize"></BinaryString>
 										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 										<bool name="DefinesCapabilities">false</bool>
 										<string name="Name">TargetChannelChip</string>
-										<BinaryString name="SerializedOverrides" />
+										<BinaryString name="SerializedOverrides"></BinaryString>
 										<int64 name="SourceAssetId">-1</int64>
 										<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 									</Properties>
@@ -3092,12 +3091,12 @@ end)</ProtectedString>
 										<CachedFaceId><url>rbxasset://fonts/Arimo-Regular.ttf</url></CachedFaceId>
 									</Font>
 									<float name="LineHeight">1</float>
-									<string name="LocalizationMatchIdentifier" />
-									<string name="LocalizationMatchedSourceText" />
+									<string name="LocalizationMatchIdentifier"></string>
+									<string name="LocalizationMatchedSourceText"></string>
 									<int name="MaxVisibleGraphemes">-1</int>
-									<string name="OpenTypeFeatures" />
+									<string name="OpenTypeFeatures"></string>
 									<bool name="RichText">false</bool>
-									<string name="Text" />
+									<string name="Text"></string>
 									<Color3 name="TextColor3">
 										<R>0.105882362</R>
 										<G>0.164705887</G>
@@ -3177,11 +3176,11 @@ end)</ProtectedString>
 									<token name="SelectionBehaviorRight">0</token>
 									<token name="SelectionBehaviorUp">0</token>
 									<bool name="SelectionGroup">false</bool>
-									<BinaryString name="AttributesSerialize" />
+									<BinaryString name="AttributesSerialize"></BinaryString>
 									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 									<bool name="DefinesCapabilities">false</bool>
 									<string name="Name">SendButton</string>
-									<BinaryString name="SerializedOverrides" />
+									<BinaryString name="SerializedOverrides"></BinaryString>
 									<int64 name="SourceAssetId">-1</int64>
 									<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 								</Properties>
@@ -3193,10 +3192,10 @@ end)</ProtectedString>
 											<Style>Normal</Style>
 										</Font>
 										<float name="LineHeight">1</float>
-										<string name="LocalizationMatchIdentifier" />
-										<string name="LocalizationMatchedSourceText" />
+										<string name="LocalizationMatchIdentifier"></string>
+										<string name="LocalizationMatchedSourceText"></string>
 										<int name="MaxVisibleGraphemes">-1</int>
-										<string name="OpenTypeFeatures" />
+										<string name="OpenTypeFeatures"></string>
 										<bool name="RichText">false</bool>
 										<string name="Text">paper-airplane</string>
 										<Color3 name="TextColor3">
@@ -3272,11 +3271,11 @@ end)</ProtectedString>
 										<token name="SelectionBehaviorRight">0</token>
 										<token name="SelectionBehaviorUp">0</token>
 										<bool name="SelectionGroup">false</bool>
-										<BinaryString name="AttributesSerialize" />
+										<BinaryString name="AttributesSerialize"></BinaryString>
 										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 										<bool name="DefinesCapabilities">false</bool>
 										<string name="Name">SendIcon</string>
-										<BinaryString name="SerializedOverrides" />
+										<BinaryString name="SerializedOverrides"></BinaryString>
 										<int64 name="SourceAssetId">-1</int64>
 										<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 									</Properties>
@@ -3295,11 +3294,11 @@ end)</ProtectedString>
 										<token name="HorizontalAlignment">0</token>
 										<token name="SortOrder">0</token>
 										<token name="VerticalAlignment">0</token>
-										<BinaryString name="AttributesSerialize" />
+										<BinaryString name="AttributesSerialize"></BinaryString>
 										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 										<bool name="DefinesCapabilities">false</bool>
 										<string name="Name">Layout</string>
-										<BinaryString name="SerializedOverrides" />
+										<BinaryString name="SerializedOverrides"></BinaryString>
 										<int64 name="SourceAssetId">-1</int64>
 										<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 									</Properties>
@@ -3317,11 +3316,11 @@ end)</ProtectedString>
 								<X>0</X>
 								<Y>0</Y>
 							</Vector2>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
 							<string name="Name">UISizeConstraint</string>
-							<BinaryString name="SerializedOverrides" />
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -3344,11 +3343,11 @@ end)</ProtectedString>
 								<S>0</S>
 								<O>8</O>
 							</UDim>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
 							<string name="Name">UIPadding</string>
-							<BinaryString name="SerializedOverrides" />
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -3410,11 +3409,11 @@ end)</ProtectedString>
 							<token name="SelectionBehaviorRight">0</token>
 							<token name="SelectionBehaviorUp">0</token>
 							<bool name="SelectionGroup">false</bool>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
 							<string name="Name">AutocompleteDropdown</string>
-							<BinaryString name="SerializedOverrides" />
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -3428,11 +3427,11 @@ end)</ProtectedString>
 									<X>0</X>
 									<Y>0</Y>
 								</Vector2>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
 								<string name="Name">UISizeConstraint</string>
-								<BinaryString name="SerializedOverrides" />
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -3494,11 +3493,11 @@ end)</ProtectedString>
 								<token name="SelectionBehaviorRight">0</token>
 								<token name="SelectionBehaviorUp">0</token>
 								<bool name="SelectionGroup">false</bool>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
 								<string name="Name">ScrollBarFrame</string>
-								<BinaryString name="SerializedOverrides" />
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -3520,11 +3519,11 @@ end)</ProtectedString>
 										<S>0</S>
 										<O>3</O>
 									</UDim>
-									<BinaryString name="AttributesSerialize" />
+									<BinaryString name="AttributesSerialize"></BinaryString>
 									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 									<bool name="DefinesCapabilities">false</bool>
 									<string name="Name">Corner</string>
-									<BinaryString name="SerializedOverrides" />
+									<BinaryString name="SerializedOverrides"></BinaryString>
 									<int64 name="SourceAssetId">-1</int64>
 									<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 								</Properties>
@@ -3548,11 +3547,11 @@ end)</ProtectedString>
 									<float name="Thickness">1</float>
 									<float name="Transparency">0.800000012</float>
 									<int name="ZIndex">1</int>
-									<BinaryString name="AttributesSerialize" />
+									<BinaryString name="AttributesSerialize"></BinaryString>
 									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 									<bool name="DefinesCapabilities">false</bool>
 									<string name="Name">Border</string>
-									<BinaryString name="SerializedOverrides" />
+									<BinaryString name="SerializedOverrides"></BinaryString>
 									<int64 name="SourceAssetId">-1</int64>
 									<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 								</Properties>
@@ -3614,11 +3613,11 @@ end)</ProtectedString>
 									<token name="SelectionBehaviorRight">0</token>
 									<token name="SelectionBehaviorUp">0</token>
 									<bool name="SelectionGroup">false</bool>
-									<BinaryString name="AttributesSerialize" />
+									<BinaryString name="AttributesSerialize"></BinaryString>
 									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 									<bool name="DefinesCapabilities">false</bool>
 									<string name="Name">ScrollViewFrame</string>
-									<BinaryString name="SerializedOverrides" />
+									<BinaryString name="SerializedOverrides"></BinaryString>
 									<int64 name="SourceAssetId">-1</int64>
 									<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 								</Properties>
@@ -3711,11 +3710,11 @@ end)</ProtectedString>
 										<token name="SelectionBehaviorRight">0</token>
 										<token name="SelectionBehaviorUp">0</token>
 										<bool name="SelectionGroup">true</bool>
-										<BinaryString name="AttributesSerialize" />
+										<BinaryString name="AttributesSerialize"></BinaryString>
 										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 										<bool name="DefinesCapabilities">false</bool>
 										<string name="Name">ScrollView</string>
-										<BinaryString name="SerializedOverrides" />
+										<BinaryString name="SerializedOverrides"></BinaryString>
 										<int64 name="SourceAssetId">-1</int64>
 										<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 									</Properties>
@@ -3733,11 +3732,11 @@ end)</ProtectedString>
 											<token name="HorizontalAlignment">1</token>
 											<token name="SortOrder">2</token>
 											<token name="VerticalAlignment">1</token>
-											<BinaryString name="AttributesSerialize" />
+											<BinaryString name="AttributesSerialize"></BinaryString>
 											<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 											<bool name="DefinesCapabilities">false</bool>
 											<string name="Name">$layout</string>
-											<BinaryString name="SerializedOverrides" />
+											<BinaryString name="SerializedOverrides"></BinaryString>
 											<int64 name="SourceAssetId">-1</int64>
 											<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 										</Properties>
@@ -3839,11 +3838,11 @@ end)</ProtectedString>
 						<token name="SelectionBehaviorRight">0</token>
 						<token name="SelectionBehaviorUp">0</token>
 						<bool name="SelectionGroup">false</bool>
-						<BinaryString name="AttributesSerialize" />
+						<BinaryString name="AttributesSerialize"></BinaryString>
 						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="DefinesCapabilities">false</bool>
 						<string name="Name">topBorder</string>
-						<BinaryString name="SerializedOverrides" />
+						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					</Properties>
@@ -3857,11 +3856,11 @@ end)</ProtectedString>
 								<X>0</X>
 								<Y>0</Y>
 							</Vector2>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
 							<string name="Name">uiSizeConstraint</string>
-							<BinaryString name="SerializedOverrides" />
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -3881,11 +3880,11 @@ end)</ProtectedString>
 						<token name="HorizontalAlignment">1</token>
 						<token name="SortOrder">2</token>
 						<token name="VerticalAlignment">1</token>
-						<BinaryString name="AttributesSerialize" />
+						<BinaryString name="AttributesSerialize"></BinaryString>
 						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="DefinesCapabilities">false</bool>
 						<string name="Name">layout</string>
-						<BinaryString name="SerializedOverrides" />
+						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					</Properties>
@@ -3900,11 +3899,11 @@ end)</ProtectedString>
 							<X>0</X>
 							<Y>0</Y>
 						</Vector2>
-						<BinaryString name="AttributesSerialize" />
+						<BinaryString name="AttributesSerialize"></BinaryString>
 						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="DefinesCapabilities">false</bool>
 						<string name="Name">uiSizeConstraint</string>
-						<BinaryString name="SerializedOverrides" />
+						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					</Properties>
@@ -3966,18 +3965,18 @@ end)</ProtectedString>
 						<token name="SelectionBehaviorRight">0</token>
 						<token name="SelectionBehaviorUp">0</token>
 						<bool name="SelectionGroup">false</bool>
-						<BinaryString name="AttributesSerialize" />
+						<BinaryString name="AttributesSerialize"></BinaryString>
 						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="DefinesCapabilities">false</bool>
 						<string name="Name">chatWindow</string>
-						<BinaryString name="SerializedOverrides" />
+						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					</Properties>
 					<Item class="ImageButton" referent="RBX3DF2868D3D72445BB4E252AA3C7843A9">
 						<Properties>
 							<Content name="HoverImageContent">
-								<null />
+								<null></null>
 							</Content>
 							<Color3 name="ImageColor3">
 								<R>1</R>
@@ -3985,7 +3984,7 @@ end)</ProtectedString>
 								<B>1</B>
 							</Color3>
 							<Content name="ImageContent">
-								<null />
+								<null></null>
 							</Content>
 							<Vector2 name="ImageRectOffset">
 								<X>0</X>
@@ -3997,7 +3996,7 @@ end)</ProtectedString>
 							</Vector2>
 							<float name="ImageTransparency">0</float>
 							<Content name="PressedImageContent">
-								<null />
+								<null></null>
 							</Content>
 							<token name="ResampleMode">0</token>
 							<token name="ScaleType">0</token>
@@ -4078,11 +4077,11 @@ end)</ProtectedString>
 							<token name="SelectionBehaviorRight">0</token>
 							<token name="SelectionBehaviorUp">0</token>
 							<bool name="SelectionGroup">false</bool>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
 							<string name="Name">scrollingView</string>
-							<BinaryString name="SerializedOverrides" />
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -4143,11 +4142,11 @@ end)</ProtectedString>
 								<token name="SelectionBehaviorRight">0</token>
 								<token name="SelectionBehaviorUp">0</token>
 								<bool name="SelectionGroup">false</bool>
-								<BinaryString name="AttributesSerialize" />
+								<BinaryString name="AttributesSerialize"></BinaryString>
 								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 								<bool name="DefinesCapabilities">false</bool>
 								<string name="Name">bottomLockedScrollView</string>
-								<BinaryString name="SerializedOverrides" />
+								<BinaryString name="SerializedOverrides"></BinaryString>
 								<int64 name="SourceAssetId">-1</int64>
 								<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 							</Properties>
@@ -4169,11 +4168,11 @@ end)</ProtectedString>
 										<S>0</S>
 										<O>0</O>
 									</UDim>
-									<BinaryString name="AttributesSerialize" />
+									<BinaryString name="AttributesSerialize"></BinaryString>
 									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 									<bool name="DefinesCapabilities">false</bool>
 									<string name="Name">padding</string>
-									<BinaryString name="SerializedOverrides" />
+									<BinaryString name="SerializedOverrides"></BinaryString>
 									<int64 name="SourceAssetId">-1</int64>
 									<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 								</Properties>
@@ -4267,11 +4266,11 @@ end)</ProtectedString>
 									<token name="SelectionBehaviorRight">0</token>
 									<token name="SelectionBehaviorUp">0</token>
 									<bool name="SelectionGroup">true</bool>
-									<BinaryString name="AttributesSerialize" />
+									<BinaryString name="AttributesSerialize"></BinaryString>
 									<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 									<bool name="DefinesCapabilities">false</bool>
 									<string name="Name">RCTScrollView</string>
-									<BinaryString name="SerializedOverrides" />
+									<BinaryString name="SerializedOverrides"></BinaryString>
 									<int64 name="SourceAssetId">-1</int64>
 									<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 								</Properties>
@@ -4289,11 +4288,11 @@ end)</ProtectedString>
 										<token name="HorizontalAlignment">1</token>
 										<token name="SortOrder">2</token>
 										<token name="VerticalAlignment">1</token>
-										<BinaryString name="AttributesSerialize" />
+										<BinaryString name="AttributesSerialize"></BinaryString>
 										<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 										<bool name="DefinesCapabilities">false</bool>
 										<string name="Name">$layout</string>
-										<BinaryString name="SerializedOverrides" />
+										<BinaryString name="SerializedOverrides"></BinaryString>
 										<int64 name="SourceAssetId">-1</int64>
 										<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 									</Properties>
@@ -4311,11 +4310,11 @@ end)</ProtectedString>
 								<X>0</X>
 								<Y>0</Y>
 							</Vector2>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
 							<string name="Name">uiSizeConstraint</string>
-							<BinaryString name="SerializedOverrides" />
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -4413,11 +4412,11 @@ end)</ProtectedString>
 						<token name="SelectionBehaviorRight">0</token>
 						<token name="SelectionBehaviorUp">0</token>
 						<bool name="SelectionGroup">false</bool>
-						<BinaryString name="AttributesSerialize" />
+						<BinaryString name="AttributesSerialize"></BinaryString>
 						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="DefinesCapabilities">false</bool>
 						<string name="Name">bottomBorder</string>
-						<BinaryString name="SerializedOverrides" />
+						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					</Properties>
@@ -4431,11 +4430,11 @@ end)</ProtectedString>
 								<X>0</X>
 								<Y>0</Y>
 							</Vector2>
-							<BinaryString name="AttributesSerialize" />
+							<BinaryString name="AttributesSerialize"></BinaryString>
 							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 							<bool name="DefinesCapabilities">false</bool>
 							<string name="Name">uiSizeConstraint</string>
-							<BinaryString name="SerializedOverrides" />
+							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						</Properties>
@@ -4498,11 +4497,11 @@ end)</ProtectedString>
 						<token name="SelectionBehaviorRight">0</token>
 						<token name="SelectionBehaviorUp">0</token>
 						<bool name="SelectionGroup">false</bool>
-						<BinaryString name="AttributesSerialize" />
+						<BinaryString name="AttributesSerialize"></BinaryString>
 						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 						<bool name="DefinesCapabilities">false</bool>
 						<string name="Name">topPadding</string>
-						<BinaryString name="SerializedOverrides" />
+						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					</Properties>
@@ -4510,17 +4509,17 @@ end)</ProtectedString>
 			</Item>
 			<Item class="ModuleScript" referent="RBX87637833D9F34A7BA89BE206CC1D0B6E">
 				<Properties>
-					<Content name="LinkedSource"><null /></Content>
-					<ProtectedString name="Source">local Base64 = {}
+					<Content name="LinkedSource"><null></null></Content>
+					<ProtectedString name="Source"><![CDATA[local Base64 = {}
 local b = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
 
 function Base64.encode(data)
 	return ((data:gsub('.', function(x) 
 		local r,b='',x:byte()
-		for i=8,1,-1 do r=r..(b%2^i-b%2^(i-1)&gt;0 and '1' or '0') end
+		for i=8,1,-1 do r=r..(b%2^i-b%2^(i-1)>0 and '1' or '0') end
 		return r;
 	end)..'0000'):gsub('%d%d%d?%d?%d?%d?', function(x)
-		if (#x &lt; 6) then return '' end
+		if (#x < 6) then return '' end
 		local c=0
 		for i=1,6 do c=c+(x:sub(i,i)=='1' and 2^(6 - i) or 0) end
 		return b:sub(c + 1,c + 1)
@@ -4532,7 +4531,7 @@ function Base64.decode(data)
 	return (data:gsub('.', function(x)
 		if (x == '=') then return '' end
 		local r,f='',(b:find(x)-1)
-		for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)&gt;0 and '1' or '0') end
+		for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end
 		return r;
 	end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x)
 		if (#x ~= 8) then return '' end
@@ -4546,13 +4545,13 @@ end
 
 return Base64
 
-</ProtectedString>
+]]></ProtectedString>
 					<string name="ScriptGuid">{E9DB1063-1D29-4A68-88A7-A2BC588EAF89}</string>
 					<BinaryString name="AttributesSerialize">AQAAAA8AAABzY3JpcHRJc0VuYWJsZWQDAQ==</BinaryString>
 					<SecurityCapabilities name="Capabilities">17996771963439872</SecurityCapabilities>
 					<bool name="DefinesCapabilities">true</bool>
-					<string name="Name" />
-					<BinaryString name="SerializedOverrides" />
+					<string name="Name"></string>
+					<BinaryString name="SerializedOverrides"></BinaryString>
 					<int64 name="SourceAssetId">8862622544</int64>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 				</Properties>
@@ -4560,6 +4559,6 @@ return Base64
 		</Item>
 	</Item>
 	<SharedStrings>
-		<SharedString md5="yuZpQdnvvUBOTYh1jqZ2cA==" />
+		<SharedString md5="yuZpQdnvvUBOTYh1jqZ2cA=="></SharedString>
 	</SharedStrings>
 </roblox>
