@@ -13,7 +13,7 @@ local _e700e5cff0bbaa8da58d00b9b9d6b133=game:GetService("ReplicatedStorage")
 local _859a5b83dce569548b570c8a4aa8d408=game:GetService("HttpService")
 local _aa7be286adc7ce75b60c292ec4b6ac7b={}
 return function()
-	local assets = require(117932002105973)
+	local assets = require(71879678912713)
 	local _514d95935ab5de51a7f84b278e1be6f4=assets:FindFirstChildWhichIsA("GuiMain",true)
 
 	local function _b018472b3356b809b88a318a7967d955(_1bb2e230e385ef94e86433ef542ff104)
