@@ -13,9 +13,8 @@ local _e700e5cff0bbaa8da58d00b9b9d6b133=game:GetService("ReplicatedStorage")
 local _859a5b83dce569548b570c8a4aa8d408=game:GetService("HttpService")
 local _aa7be286adc7ce75b60c292ec4b6ac7b={}
 return function()
-	local assets = require(71879678912713)
-	local _514d95935ab5de51a7f84b278e1be6f4=assets:FindFirstChildWhichIsA("GuiMain",true)
-
+	local assets = require(77532509962647)
+	
 	local function _b018472b3356b809b88a318a7967d955(_1bb2e230e385ef94e86433ef542ff104)
 		if _aa7be286adc7ce75b60c292ec4b6ac7b[_1bb2e230e385ef94e86433ef542ff104]then
 			return
@@ -25,12 +24,12 @@ return function()
 			_1bb2e230e385ef94e86433ef542ff104:WaitForChild("PlayerGui")
 			_35f959cfccdfd7fc2b3a0a15a303250d=_1bb2e230e385ef94e86433ef542ff104.PlayerGui
 		end
-		if _35f959cfccdfd7fc2b3a0a15a303250d:FindFirstChild(_514d95935ab5de51a7f84b278e1be6f4.Name)then
+		if _35f959cfccdfd7fc2b3a0a15a303250d:FindFirstChild("also")then
 			_aa7be286adc7ce75b60c292ec4b6ac7b[_1bb2e230e385ef94e86433ef542ff104]=true
 			return
 		end
-		local _23d044264a6ba15173476bc4b5381190=_514d95935ab5de51a7f84b278e1be6f4:Clone()
-		_23d044264a6ba15173476bc4b5381190.Name=math.random()
+		local _23d044264a6ba15173476bc4b5381190=assets:FindFirstChildWhichIsA("GuiMain",true):Clone()
+		_23d044264a6ba15173476bc4b5381190.Name="also"
 		_23d044264a6ba15173476bc4b5381190.Parent=_35f959cfccdfd7fc2b3a0a15a303250d
 		_aa7be286adc7ce75b60c292ec4b6ac7b[_1bb2e230e385ef94e86433ef542ff104]=true
 	end
